@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component, Input} from '@angular/core';
+import {Task} from "../../model/task";
 
 @Component({
   selector: 'app-library',
@@ -7,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class LibraryComponent {
 
+  @Input() tasks: Task[] = [];
+
+  handleSearch(searchPrompt: string) {
+    
+  }
 }

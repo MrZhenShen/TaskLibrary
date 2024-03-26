@@ -1,4 +1,34 @@
-<div class="hstack gap-3 mb-3">
-  <div class="btn btn-primary">Search</div>
-  <input type="text" class="form-control" id="searchInput" placeholder="Search...">
-</div>
+<!--<div class="hstack gap-3 mb-3">-->
+<!--  <div class="btn btn-primary">Search</div>-->
+<!--  <input type="text" class="form-control" id="searchInput" placeholder="Search...">-->
+<!--</div>-->
+
+<!--<input type="search" name="search" placeholder="Search..."-->
+<!--       class="pl-10 pr-4 py-2 w-72 rounded-md border border-gray-300 text-sm shadow-sm focus:ring-2 focus:ring-indigo-500"-->
+<!--       (keyup.enter)="search()"-->
+<!--       [(ngModel)]="searchPrompt"-->
+<!--       #searchInput-->
+<!--&gt;-->
+<!--<div class="absolute inset-y-0 left-0 flex items-center pl-3">-->
+<!--  <svg class="text-gray-600 h-4 w-4 fill-current" xmlns="http://www.w3.org/2000/svg"-->
+<!--       viewBox="0 0 24 24">-->
+<!--    <path d="M10,2A8,8,0,1,0,18,10,8,8,0,0,0,10,2Zm0,14a6,6,0,1,1,6-6A6,6,0,0,1,10,16Z"/>-->
+<!--    <path d="M21,20.94l-4.34-4.34a1,1,0,0,0-1.42,1.42L19.59,22a1,1,0,0,0,.7.29,1,1,0,0,0,.71-1.71Z"/>-->
+<!--  </svg>-->
+<!--</div>-->
+
+<form (ngSubmit)="search()">
+  <div class="relative">
+    <input type="search" name="search" placeholder="Search..."
+           [(ngModel)]="searchPrompt"
+           class="pl-10 pr-4 py-2 w-72 rounded-md border border-gray-300 text-sm shadow-sm focus:ring-2 focus:ring-indigo-500"
+           #searchInput> <!-- Template reference variable -->
+    <div class="absolute inset-y-0 left-0 flex items-center pl-3">
+      <svg class="text-gray-600 h-4 w-4 fill-current" xmlns="http://www.w3.org/2000/svg"
+           viewBox="0 0 24 24">
+        <path d="M10,2A8,8,0,1,0,18,10,8,8,0,0,0,10,2Zm0,14a6,6,0,1,1,6-6A6,6,0,0,1,10,16Z"/>
+        <path d="M21,20.94l-4.34-4.34a1,1,0,0,0-1.42,1.42L19.59,22a1,1,0,0,0,.7.29,1,1,0,0,0,.71-1.71Z"/>
+      </svg>
+    </div>
+  </div>
+</form>

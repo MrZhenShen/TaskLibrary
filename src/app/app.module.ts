@@ -18,9 +18,11 @@ import {FormSearchComponent} from './shared/form-search/form-search.component';
 import {LibraryComponent} from './page/library/library.component';
 import {AngularFireModule} from "@angular/fire/compat";
 import {AngularFireAuthModule} from "@angular/fire/compat/auth";
-import {environment} from "../environments/environment";
-import {ReactiveFormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {ProfileComponent} from "./page/profile/profile.component";
+import {environment} from "../environments/environment";
+import {AngularFirestoreModule} from "@angular/fire/compat/firestore";
+import { TaskCreationComponent } from './shared/task-creation/task-creation.component';
 
 @NgModule({
   declarations: [
@@ -39,15 +41,18 @@ import {ProfileComponent} from "./page/profile/profile.component";
     FriendsComponent,
     AuthComponent,
     FormSearchComponent,
-    LibraryComponent
+    LibraryComponent,
+    TaskCreationComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    AngularFireModule.initializeApp(environment.firebase),
-    AngularFireAuthModule,
-    ReactiveFormsModule,
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        AngularFireModule.initializeApp(environment.firebase),
+        AngularFireAuthModule,
+        AngularFirestoreModule,
+        ReactiveFormsModule,
+        FormsModule,
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

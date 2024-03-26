@@ -1,17 +1,33 @@
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-12">
-      <h1>TASKS</h1>
-      <app-form-search/>
+<main class="h-full bg-gray-100 p-8">
+  <div class="max-w-7xl mx-auto">
+    <div class="sm:flex">
+      <h1 class="text-3xl font-bold text-gray-900">Tasks</h1>
+      <div class="relative ms-auto">
+        <app-form-search (searchEmitter)="handleSearch($event)"/>
+      </div>
     </div>
-
-    <h3>Featured tasks</h3>
-    <div class="col-md-9">
-      <app-task-collection/>
-    </div>
-
-    <div class="col-md-3">
-      <app-filter/>
+    <!-- Your content here -->
+    <div class="mt-6 p-6 bg-white rounded-lg border border-gray-200 shadow-md">
+      <!-- Content goes here -->
     </div>
   </div>
-</div>
+</main>
+
+
+<!--<div class="container-fluid">-->
+<!--  <div class="row">-->
+<!--    <div class="col-12">-->
+<!--      <h1>TASKS</h1>-->
+<!--      <app-form-search/>-->
+<!--    </div>-->
+
+<!--    <h3>Featured tasks</h3>-->
+<!--    <div class="col-md-9">-->
+<!--      <app-task-collection/>-->
+<!--    </div>-->
+
+<!--    <div class="col-md-3">-->
+<!--      <app-filter/>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->

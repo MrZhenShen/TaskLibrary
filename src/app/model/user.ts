@@ -1,5 +1,7 @@
-export interface User {
-  username: string,
+export interface UserDetails {
   email: string,
-  age: number
+  username?: string,
+  age?: number
+  tasks: string[]
+  friendIds: string[]
 }

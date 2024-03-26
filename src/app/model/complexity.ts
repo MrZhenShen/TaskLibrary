@@ -1,5 +1,5 @@
 export enum Complexity {
-  EASY,
-  MEDIUM,
-  HARD
+  LOW = "LOW",
+  MEDIUM = "MEDIUM",
+  HARD = "HARD"
 }

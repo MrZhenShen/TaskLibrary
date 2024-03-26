@@ -7,4 +7,8 @@ import {Component} from '@angular/core';
 })
 export class TasksPageComponent {
 
+  handleSearch(searchPrompt: string) {
+    console.log(searchPrompt)
+  }
+
 }

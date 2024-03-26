@@ -1,10 +1,10 @@
 import {Complexity} from "./complexity";
-import {User} from "./user";
 
 export interface Task {
-  title: string,
-  content: string,
-  author: User,
-  complexity: Complexity,
-  topic: string
+  title?: string,
+  content?: string,
+  author: string,
+  complexity?: Complexity,
+  topic?: string,
+  sharedWith: string[]
 }

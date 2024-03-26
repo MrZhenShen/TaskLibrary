@@ -15,7 +15,7 @@ export class TaskComponent {
   TaskComponent() {
     this.task.title = "asd"
     this.task.content = "asd"
-    this.task.complexity = Complexity.EASY
+    this.task.complexity = Complexity.LOW
     this.task.topic = "asd"
   }
 }
