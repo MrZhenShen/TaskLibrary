@@ -29,4 +29,5 @@ export class TaskCreationComponent {
   }
 
 
+  protected readonly Complexity = Complexity;
 }
